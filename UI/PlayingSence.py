@@ -6,6 +6,7 @@ import time
 import tools.VideoPath as VideoPath
 from tools.VideoPlayer import VideoPlayer
 from yoga_toolkit.yogaPose import *
+""" Turn off the comment below if the yoga mat is connected. """
 # from yoga_toolkit.yogamat import get_heatmap
 
 class StartPlay(tk.Frame):
@@ -56,6 +57,7 @@ class StartPlay(tk.Frame):
 		self.voice_thread = threading.Thread(target=self.voice, daemon=True)
 
 		""" heatmap """
+		""" Turn off the comment below if the yoga mat is connected. """
 		# w, h = self.width, 150
 		# self.canvas_heatmap = tk.Canvas(self, width=w, height=h)
 		# self.canvas_heatmap.place(x=650, y=620)
@@ -64,21 +66,25 @@ class StartPlay(tk.Frame):
 		self.cap_start()
 
 	def change_image(self):
+		"""
+		This is a function used to change the image to give user a hint.
+		"""
 		while self.is_running:
 			img = self.img_path
-			print(img)
 			try:
 				back_img = Image.open(img).resize((self.width, self.height))
 				back_img = ImageTk.PhotoImage(back_img)
 				self.canvas_img.create_image(0, 0, anchor='nw', image=back_img)
 				self.canvas_img.image = back_img
 			except:
-				# print('img stop')
 				pass
 
-			time.sleep(1)
+			time.sleep(2)
 
 	def heatmap_display(self):
+		"""
+		This is a function used to display the heatmap from the yoga mat.
+		"""
 		while self.is_running:
 			heatmap_frame = get_heatmap()
 			photo_image = ImageTk.PhotoImage(Image.fromarray(heatmap_frame))
@@ -87,6 +93,9 @@ class StartPlay(tk.Frame):
 			self.canvas_heatmap.update()
 
 	def counting(self):
+		"""
+		This is a function used for countdown while pratice.
+		"""
 		self.count.set(30)
 		cnt_tmp = int(self.count.get())
 		while cnt_tmp > -1:
@@ -102,13 +111,20 @@ class StartPlay(tk.Frame):
 			cnt_tmp -= 1
 
 	def cap_start(self):
+		"""
+		This is a function used to start all the threads while switch to the playing sence.
+		"""
 		self.is_running = True
 		self.web_thread.start()
-		# self.heatmap_thread.start()
+		""" Turn off the comment below if the yoga mat is connected. """
+		# self.heatmap_thread.start()	
 		self.voice_thread.start()
 		self.img_thread.start()
 
 	def cap_update(self):
+		"""
+		This is a function used to update the frame of the camera.
+		"""
 		while self.is_running:
 			frame = self.vs.frame
 			if frame is not None:
@@ -126,6 +142,9 @@ class StartPlay(tk.Frame):
 					print('cap stop')
 
 	def voice(self):
+		"""
+		This is a function used to do text-to-speech opartion.
+		"""
 		while self.is_running:
 			if not self.is_paused:
 				if self.cnt_frame > 2:
