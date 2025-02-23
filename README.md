@@ -54,3 +54,6 @@
 - README.md
 - requirements.txt
 - yoga_toolkit_test.py: used to test yoga_toolkit function (developer use)
+
+## Demo Video
+[![Watch the video](https://i9.ytimg.com/vi_webp/bue8EUY3Pno/mq2.webp?sqp=CODT7L0G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEygTMA8=&rs=AOn4CLCrhWVEGtCk_aU3jZ1hgy20Cou6SQ)](https://youtu.be/bue8EUY3Pno)
