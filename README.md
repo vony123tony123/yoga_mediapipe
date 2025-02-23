@@ -1,4 +1,6 @@
-# yoga
+# Home-Based Yoga Self-Training Application
+
+Implement paper： "Home-Based Yoga Self-Training Application" in 2023 CVGIP Conference
 
 ## Pre-Requisites
 1. Clone this repository.
