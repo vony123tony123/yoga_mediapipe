@@ -3,10 +3,7 @@
 Implement paper： "Home-Based Yoga Self-Training Application" in 2023 CVGIP Conference
 
 ## Introduction
-Physical activity and sports are becoming more and more significant in today's world. In Taiwan, There are 80.2% of people participate in sports and exercise, with aerobic exercises ranking third among women. This demonstrated that yoga is a popular exercise and many individuals are engaging in it. \
-　　With the use of pressure sensors and pose estimation algorithms, we develop a non-contact yoga training system. The system can accurately detect users' bodies using deep learning algorithms, and the pressure sensors determine their center of gravity and ground contact. This makes it possible to evaluate yoga positions precisely, just like you would under the direction of a professional teacher. Furthermore, we are targeting to develop a voice-guided mobile app that will improve user convenience and usage even more. \
-　　The study has various benefits, including an easy setup without the need for specific equipment, voice-guided pose estimation, tutorial videos for learning and improving yoga techniques, and sophisticated pressure mats that provide valuable insights into body balance and stability.\
-　　Overall, our research developed a complete and user-friendly platform for yoga practice that ensures correct postures and increases workout efficacy.
+本計畫希望結合深度學習姿態辨識結合壓力感測器開發非接觸式的瑜珈動作訓練系統，其中深度學習辨識使用者的身體骨架姿態，壓力感測器能進一步感測使用者的重心或是與地面接觸的情形，進而更準確的判斷姿態的標準程度。並且以智慧型手機的應用程式呈現系統，藉由即時回饋的系統與語音指令的方式提高使用者的便利性與實用的程度。
 
 
 
