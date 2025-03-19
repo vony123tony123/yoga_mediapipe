@@ -3,13 +3,15 @@
 Implement paper： "Home-Based Yoga Self-Training Application" in 2023 CVGIP Conference
 
 ## Introduction
-本論文探討如何結合硬體感測技術以及深度學習演算法，應用於擴增實境飛輪體驗系統。
-在硬體方面，我們在自行車上裝設速度踏頻感測器偵測使用者騎乘的速度，並使用可變電阻偵測自行車的轉向，而非傳統的G-sensor，不但成本較低，也提升了轉向的穩定性。而軟體方面，我們使用InternImage偵測真實場景的道路範圍，再使用邊緣偵測等方法判斷道路的延伸方向，並應用YOLOv7偵測真實場景路上的人與車。
-我們開發了一套結合軟硬體架構的擴增實境飛輪系統。使用者可以透過踩踏踏板與旋轉龍頭控制系統中的虛擬人物，使虛擬人物保持在兩側道路線內，並同時避開道路上的障礙物，模擬現實中的道路情況，希望能讓使用者在家中也能享受到具有挑戰與趣味性的飛輪體驗。
+Physical activity and sports are becoming more and more significant in today's world. In Taiwan, There are 80.2% of people participate in sports and exercise, with aerobic exercises ranking third among women. This demonstrated that yoga is a popular exercise and many individuals are engaging in it. \
+　　With the use of pressure sensors and pose estimation algorithms, we develop a non-contact yoga training system. The system can accurately detect users' bodies using deep learning algorithms, and the pressure sensors determine their center of gravity and ground contact. This makes it possible to evaluate yoga positions precisely, just like you would under the direction of a professional teacher. Furthermore, we are targeting to develop a voice-guided mobile app that will improve user convenience and usage even more. \
+　　The study has various benefits, including an easy setup without the need for specific equipment, voice-guided pose estimation, tutorial videos for learning and improving yoga techniques, and sophisticated pressure mats that provide valuable insights into body balance and stability.\
+　　Overall, our research developed a complete and user-friendly platform for yoga practice that ensures correct postures and increases workout efficacy.
+
 
 
 ## Demo Video
-[![Watch the video](https://i9.ytimg.com/vi_webp/bue8EUY3Pno/mq2.webp?sqp=CODT7L0G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEygTMA8=&rs=AOn4CLCrhWVEGtCk_aU3jZ1hgy20Cou6SQ)](https://youtu.be/bue8EUY3Pno)
+[![Demo](https://i9.ytimg.com/vi_webp/bue8EUY3Pno/mq2.webp?sqp=CODT7L0G-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGH8gEygTMA8=&rs=AOn4CLCrhWVEGtCk_aU3jZ1hgy20Cou6SQ)](https://youtu.be/bue8EUY3Pno)
 
 ## Pre-Requisites
 1. Clone this repository.
