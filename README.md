@@ -1,6 +1,6 @@
 # Home-Based Yoga Self-Training Application
 
-Implement paper： "Home-Based Yoga Self-Training Application" in 2023 CVGIP Conference
+Implement paper： "Home-Based Yoga Self-Training Application" in 2023 36th CVGIP Conference
 
 ## Introduction
 本計畫希望結合深度學習姿態辨識結合壓力感測器開發非接觸式的瑜珈動作訓練系統，其中深度學習辨識使用者的身體骨架姿態，壓力感測器能進一步感測使用者的重心或是與地面接觸的情形，進而更準確的判斷姿態的標準程度。並且以智慧型手機的應用程式呈現系統，藉由即時回饋的系統與語音指令的方式提高使用者的便利性與實用的程度。
